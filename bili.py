@@ -3,8 +3,8 @@ import numpy as np
 import cv2
 from common import *
 
-writePos = (80, 1028)
-
+writePos = (0,0)
+# Waiting to be written: pull remote png from cloud.
 img = cv2.imread("aria_q.png")
 mask = cv2.imread("aria_qmask.png")
 mask = (~mask.transpose(2, 0, 1)[0]).astype(np.bool)
